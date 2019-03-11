@@ -1,0 +1,96 @@
+html,body {
+	height: 600px;
+	width: 400px;
+}
+
+.lyrics {
+	color: #BBF138;
+	font-family: Poppins;
+	font-size: 45px;
+	line-height: 1000px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: type 6s steps(100);
+	letter-spacing: 35px;
+}
+
+@keyframes type {
+	0% {width: 0px;}
+	100% {width: 600px;}
+}
+
+.cover {
+	width: 400px;
+	height: 600px;
+	border: black 5px;
+	background: url(../images/hoot.jpg);
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.eyeballone {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	top: 44%;
+	left: 53.5%;
+	animation: bounce 1s infinite;
+ }
+
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   50% {transform: translateY(-10px);} 
+} 
+
+.eyeballtwo {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	top: 44%;
+	left: 42%;
+	animation: move 1s steps(2) infinite alternate;
+ }
+
+@keyframes move {
+  from { top: 44%; left: 42%; }
+  to   { top: 44%; left: 38%; }
+}
+
+.nose {
+	width: 3px;
+	height: 4px;
+	border-left: 15px solid transparent;
+  	border-right: 15px solid transparent;
+  	border-top: 26px solid orange;
+	position: absolute;
+	top: 47%;
+	left: 45.8%;
+	animation: spin 3s;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.nose:hover { 
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
